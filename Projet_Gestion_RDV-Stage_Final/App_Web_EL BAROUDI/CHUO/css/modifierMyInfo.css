@@ -1,0 +1,44 @@
+
+#Box_EDIT_info{
+    width:400px;
+    margin:0 auto;
+}
+/* Bordered form */
+.Edit_Info {
+    width:100%;
+    padding: 30px;
+    border: 1px solid #f1f1f1;
+    background: #fff;
+    box-shadow: 0 0 20px 0 rgba(0, 0, 0, 0.2), 0 5px 5px 0 rgba(0, 0, 0, 0.24);
+}
+#container h1{
+    width: 81%;
+    margin: 0 auto;
+    padding-bottom: 10px;
+}
+
+/* Full-width inputs */
+.Edit_Email_pswd{
+    width: 100%;
+    padding: 12px 20px;
+    margin: 8px 0;
+    display: inline-block;
+    border: 1px solid #ccc;
+    box-sizing: border-box;
+}
+
+/* Set a style for  buttons modifier email/password */
+#BtnEdit_Info {
+    background-color: #1e90ff;
+    color: white;
+    padding: 14px 20px;
+    margin: 8px 0;
+    border: none;
+    cursor: pointer;
+    width: 100%;
+	font-size: 1.2em;
+}
+#BtnEdit_Info:hover {
+    background-color: #333333;
+    border: 1px solid black;
+}

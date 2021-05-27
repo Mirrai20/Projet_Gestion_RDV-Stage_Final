@@ -1,0 +1,122 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".ProfileActivity">
+
+
+    <ImageView
+        android:id="@+id/profileImageView"
+        android:layout_width="140dp"
+        android:layout_height="150dp"
+        android:layout_marginTop="15dp"
+        android:layout_gravity="center"
+        android:src="@drawable/ic_person_black_24dp"
+         />
+
+    <LinearLayout
+        android:id="@+id/NomAndPrenom"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_below="@+id/profileImageView"
+        android:layout_marginTop="10dp"
+        tools:ignore="MissingConstraints">
+        <EditText
+            android:id="@+id/NomNoEdit"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:hint="Nom"
+            android:layout_weight="1"/>
+        <EditText
+            android:id="@+id/PrenomNoEdit"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:hint="Prenom"
+            android:layout_weight="1"/>
+    </LinearLayout>
+    <LinearLayout
+        android:id="@+id/CINAndDdN"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_below="@+id/profileImageView"
+        android:layout_marginTop="10dp"
+        tools:ignore="MissingConstraints">
+        <EditText
+            android:id="@+id/CINnoEdit"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:hint="CIN"
+            android:layout_weight="1"/>
+        <EditText
+            android:id="@+id/DdNnoEdit"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:hint="Date de naissance"
+            android:layout_weight="1"/>
+    </LinearLayout>
+
+    <EditText
+        android:id="@+id/textEMAIL"
+        android:layout_marginTop="10dp"
+        android:layout_below="@+id/CINAndDdN"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Ton adresse Email"
+        android:inputType="textEmailAddress"
+     />
+    <EditText
+        android:id="@+id/textTELE"
+        android:layout_marginTop="10dp"
+        android:layout_below="@+id/textEMAIL"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Numéro de téléphone"
+        android:inputType="textEmailAddress"
+        />
+
+    <EditText
+        android:id="@+id/oldPassword"
+        android:layout_marginTop="10dp"
+        android:layout_below="@+id/textTELE"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Mot de passe"
+        android:inputType="textPassword"
+        />
+    <EditText
+        android:id="@+id/newPassword"
+        android:layout_marginTop="10dp"
+        android:layout_below="@+id/oldPassword"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Ton nouveau mot de passe"
+        android:inputType="textPassword"
+        />
+
+    <Button
+        android:id="@+id/modifierPr"
+        android:layout_marginTop="10dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Modifier"
+        android:layout_below="@+id/newPassword"
+        android:layout_gravity="center"
+        android:textColor="#fff"
+        android:background="#2B4E78"
+         />
+
+
+    <ProgressBar
+        android:visibility="gone"
+        android:id="@+id/progressBar2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_centerVertical="true"
+        tools:ignore="MissingConstraints" />
+</LinearLayout>

@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <group
+        android:id="@+id/grp_1"
+        android:checkableBehavior="single">
+        <item
+            android:id="@+id/nav_home"
+            android:icon="@drawable/ic_home"
+            android:title="Home" />
+        <item
+            android:id="@+id/nav_account"
+            android:icon="@drawable/ic_account_circle"
+            android:title="Mon compte" />
+        <item
+            android:id="@+id/nav_search"
+            android:icon="@drawable/specialite2"
+            android:title="Recherche Spécialité" />
+
+
+    </group>
+    <group
+        android:id="@+id/grp_2"
+        android:checkableBehavior="single">
+        <item
+            android:id="@+id/nav_history"
+            android:icon="@drawable/ic_history_black_24dp"
+            android:title="Historique des rendez-vous" />
+        <item
+            android:id="@+id/nav_consultation"
+            android:icon="@drawable/consultation"
+            android:title="Consulter votre liste de Rendez-vous" />
+    </group>
+    <group
+        android:id="@+id/grp_3"
+        android:checkableBehavior="single">
+        <item
+            android:id="@+id/nav_Rec"
+            android:icon="@drawable/reclamation"
+            android:title="Envoyer une réclamation" />
+        <item
+            android:id="@+id/nav_Srec"
+            android:icon="@drawable/suivre_recl"
+            android:title="Suivre vos réclamation" />
+    </group>
+
+    <group
+        android:id="@+id/grp_4"
+        android:checkableBehavior="none">
+
+        <item
+            android:id="@+id/nav_logout"
+            android:icon="@drawable/ic_logout"
+            android:title="logout" />
+    </group>
+
+
+</menu>

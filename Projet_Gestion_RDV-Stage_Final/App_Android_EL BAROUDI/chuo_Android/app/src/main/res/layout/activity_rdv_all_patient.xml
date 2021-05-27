@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="#ffffff"
+    tools:context=".rdvAllPatient">
+
+    <LinearLayout
+        android:id="@+id/dateCalendrier"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_marginTop="10dp"
+        android:layout_marginLeft="40dp"
+        android:layout_marginRight="40dp"
+        tools:ignore="MissingConstraints">
+
+        <EditText
+            android:id="@+id/dateRDVAllP"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:hint="Date du Rendez-vous"
+            android:layout_weight="1"/>
+        <ImageView
+            android:id="@+id/calendrier"
+            android:layout_width="100dp"
+            android:layout_height="38dp"
+            android:layout_weight="1"
+            android:src="@drawable/calendrier"
+            />
+    </LinearLayout>
+
+    <TableLayout
+        android:id="@+id/tableALLrdv"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="100dp"
+        android:paddingLeft="10dp"
+        android:paddingRight="10dp"
+        android:layout_marginVertical="30dp"
+        android:layout_marginHorizontal="10dp"
+        android:collapseColumns="2,3">
+
+
+
+    </TableLayout>
+
+    <Button
+        android:id="@+id/switchBtnALLrdv"
+        android:textColor="#fff"
+        android:background="#2B4E78"
+        android:layout_below="@+id/tableALLrdv"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Show Detail"
+        android:textAllCaps="false"
+        android:layout_gravity="center"
+        android:onClick="collapseTable"/>
+    <ProgressBar
+        android:visibility="gone"
+        android:id="@+id/progressBarRDVallPatient"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_centerVertical="true" />
+</LinearLayout>

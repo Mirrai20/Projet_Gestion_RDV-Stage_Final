@@ -1,0 +1,184 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:background="@drawable/fond_ecran"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:padding="10dp"
+        >
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_below="@+id/profileImageView"
+            android:layout_marginTop="10dp"
+            tools:ignore="MissingConstraints">
+            <EditText
+                android:id="@+id/signupCIN"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:hint="N° du carte d'identité"
+                android:layout_weight="1"/>
+            <EditText
+                android:id="@+id/signupDateN"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:focusable="false"
+                android:cursorVisible="false"
+                android:hint="Date de Naissance"
+                android:layout_weight="1"/>
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_below="@+id/profileImageView"
+            android:layout_marginTop="10dp"
+            tools:ignore="MissingConstraints">
+            <EditText
+                android:id="@+id/signupNom"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:hint="Nom"
+                android:inputType="text"
+                android:layout_weight="1"/>
+            <EditText
+                android:id="@+id/signupPrenom"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:hint="Prenom"
+                android:inputType="text"
+                android:layout_weight="1"/>
+        </LinearLayout>
+
+        <EditText
+            android:id="@+id/signuptelephone"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dp"
+            android:layout_marginBottom="8dp"
+            android:hint="Téléphone"
+            android:inputType="text" />
+
+
+        <EditText
+            android:id="@+id/signupEmail"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dp"
+            android:layout_marginBottom="8dp"
+            android:hint="Email"
+            android:inputType="textEmailAddress" />
+
+        <EditText
+            android:id="@+id/signupPassword"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dp"
+            android:layout_marginBottom="8dp"
+            android:fontFamily="sans-serif"
+            android:hint="Password"
+            android:inputType="textPassword" />
+
+
+        <RadioGroup
+            android:id="@+id/radioDescription"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dp"
+            android:layout_marginBottom="8dp"
+            android:orientation="horizontal">
+
+            <RadioButton
+                android:id="@+id/radioButtonPatient"
+                android:layout_width="98dp"
+                android:layout_height="wrap_content"
+                android:checked="true"
+                android:text="Patient" />
+
+
+            <RadioButton
+                android:id="@+id/radioButtonMedecin"
+                android:layout_width="97dp"
+                android:layout_height="wrap_content"
+                android:text="Medecin" />
+
+        </RadioGroup>
+
+        <RadioGroup
+            android:id="@+id/radioGender"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dp"
+            android:layout_marginBottom="8dp"
+            android:orientation="horizontal">
+
+            <RadioButton
+                android:id="@+id/radioButtonMale"
+                android:layout_width="98dp"
+                android:layout_height="wrap_content"
+                android:checked="true"
+                android:text="Homme" />
+
+
+            <RadioButton
+                android:id="@+id/radioButtonFemale"
+                android:layout_width="99dp"
+                android:layout_height="wrap_content"
+                android:text="Femme" />
+
+        </RadioGroup>
+
+        <Spinner
+            android:id="@+id/signupselectSP"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:entries="@array/defaultValue"
+            android:visibility="gone" />
+
+        <EditText
+            android:id="@+id/signupNuMedecin"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dp"
+            android:layout_marginBottom="8dp"
+            android:hint="Numéro médecin"
+            android:inputType="text"
+            android:visibility="gone" />
+
+        <Button
+            android:id="@+id/buttonRegister"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dp"
+            android:layout_marginBottom="8dp"
+            android:text="Register" />
+
+        <TextView
+            android:id="@+id/textViewLogin"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dp"
+            android:layout_marginBottom="8dp"
+            android:gravity="center_horizontal"
+            android:text="Already Registered?\nLogin Here"
+            android:textAlignment="center"
+            android:textAppearance="@style/Base.TextAppearance.AppCompat.Medium" />
+    </LinearLayout>
+
+    <ProgressBar
+        android:id="@+id/progressBar"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_centerVertical="true"
+        android:visibility="gone" />
+
+</RelativeLayout>

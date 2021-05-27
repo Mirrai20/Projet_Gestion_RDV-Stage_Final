@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".Prendre_RDV">
+
+    <EditText
+        android:id="@+id/SPselected"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:layout_marginBottom="10dp"
+        android:hint="Spécialité selectionner"
+        android:inputType="text"
+        tools:ignore="MissingConstraints" />
+
+    <Spinner
+        android:id="@+id/customSpinner"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/SPselected"
+        android:layout_marginTop="10dp"
+        android:layout_marginBottom="10dp"
+        tools:ignore="MissingConstraints" />
+
+    <EditText
+        android:id="@+id/dateRDV"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/customSpinner"
+        android:layout_marginTop="10dp"
+        android:focusable="false"
+        android:hint="Date du Rendez-vous 'STEP + 20minutes' 9h->16h" />
+
+    <Button
+        android:id="@+id/validerRDV"
+        android:text="Valider"
+        android:textColor="#fff"
+        android:background="#2B4E78"
+        android:layout_below="@+id/dateRDV"
+        android:layout_marginTop="40dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"/>
+
+    <ProgressBar
+        android:visibility="gone"
+        android:id="@+id/progressBarRDV"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_centerVertical="true" />
+
+</LinearLayout>
